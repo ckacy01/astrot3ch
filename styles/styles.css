@@ -1,4 +1,5 @@
-#colmain{
+/* Estilos para el Sidebar */
+#colmain {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
@@ -6,8 +7,6 @@
 .col {
     position: relative;
 }
-
-
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -45,13 +44,18 @@ body {
 .nav-link {
     color: #fff !important;
 }
+
 .navbar.scrolled {
     background-color: rgb(0, 0, 0); /* Cambia este color según tus necesidades */
 }
 
-
+.video-container {
+    position: relative;
+    display: inline-block;
+}
 
 .video {
+    display: block;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -60,12 +64,13 @@ body {
 }
 
 .video-overlay {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Sombra negra con 50% de opacidad */
+    pointer-events: none; /* Permite que los eventos pasen al video */
 }
 
 .title {
@@ -87,8 +92,6 @@ body {
     position: relative;
 }
 
-
-
 .column {
     flex: 1;
     padding: 40px;
@@ -102,49 +105,38 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 2rem;
+    margin: 10px;
 }
 
 .image {
+    display: block;
     width: 100%;
     height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
-/* Efecto sombreado en los bordes, no en el centro */
+.image:hover {
+    transform: scale(1.05);
+}
+
 .overlay-border {
-    padding: 20px;
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    border: solid 15px rgba(0, 0, 0, 0);
-    /* Sombra en el borde */
+    width: 100%;
+    height: 100%;
     pointer-events: none;
-    /* Evita que el mouse afecte el borde */
-    opacity: 0;
-    transition: opacity 0.2s;
 }
 
-.image-container:hover .overlay-border {
-    opacity: 1;
-    /* Muestra el borde sombreado al pasar el ratón */
-}
-
-/* Título en la parte superior */
 .overlay-title {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 20%;
+    bottom: 10px;
+    left: 10px;
+    color: white;
     background: rgba(0, 0, 0, 0.5);
-    /* Fondo del título */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .image-title {
@@ -159,6 +151,23 @@ body {
     /* Muestra el título al pasar el ratón */
 }
 
+.mute-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mute-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 
 @media (max-width: 992px) {
     .navbar {
@@ -167,8 +176,5 @@ body {
     .title {
         font-size: 2rem;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-
     }
 }
-
-

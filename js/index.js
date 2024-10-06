@@ -16,6 +16,13 @@ audio.addEventListener('ended', () => {
     audio.play(); 
 });
 
+// Mute button
+const muteButton = document.getElementById('muteButton');
+muteButton.addEventListener('click', () => {
+    audio.muted = !audio.muted;
+    muteButton.textContent = audio.muted ? 'Unmute' : 'Mute';
+});
+
 // Navbar change color
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar');

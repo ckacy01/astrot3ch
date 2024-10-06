@@ -13,13 +13,13 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top" id="colmain">
         <div class="container-fluid">
-          <a href="/"><img alt="NASA International Space Apps Challenge logo" loading="lazy" width="110" height=auto decoding="async" data-nimg="1" style="color:transparent; margin: 10px;" src="https://assets.spaceappschallenge.org/media/images/Space_Apps_Default_Logo_-_2-Col.width-440.jpegquality-60.png"></a>
+          <a href="/"><img alt="NASA International Space Apps Challenge logo" loading="lazy" width="110" height="auto" decoding="async" style="color:transparent; margin: 10px;" src="https://assets.spaceappschallenge.org/media/images/Space_Apps_Default_Logo_-_2-Col.width-440.jpegquality-60.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
-            <div class="navbar-nav" >
-              <a class="nav-link"  href="index.html">Home</a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">Home</a>
               <a class="nav-link" href="htdocs/gallery.html">Gallery</a>
               <a class="nav-link" href="htdocs/history.html">History</a>
               <a class="nav-link" href="#">About Us</a>
@@ -30,13 +30,15 @@
     
     <div class="row">
         <div class="col" id="colmain">
-          <video src="images/webb/video/James Webb Space Telescope.mp4" autoplay loop muted playsinline class="video" alt="James Webb Space Telescope video"></video>
+          <div class="video-container">
+              <video src="images/webb/video/James Webb Space Telescope.mp4" autoplay loop muted playsinline class="video" alt="James Webb Space Telescope video"></video>
+              <div class="video-overlay"></div>
+          </div>
           <h1 class="title">James Webb Gallery</h1>
-          <div class="video-overlay"></div>
         </div>
     </div>
 
-    <div class="row text-center mt-5 mb-5" > 
+    <div class="row text-center mt-5 mb-5">
       <h2>The James Webb Space Telescope</h2>
       <div class="row">
         <div class="col-6 mt-2">
@@ -50,33 +52,36 @@
 
     <div class="row text-center mt-5 mb-5">
       <h3>Gallery Preview</h3>
-      
-    <div class="row">
-      <div class="column">
-          <div class="image-container">
-              <img src="images/webb/galaxies/14stirone-inyt-videoSixteenByNineJumbo1600-v2.jpg" alt="Image of the JWST" class="image zoom" id="imagen">
-              <audio src="/audios/cancion_saturada.mp3" id="audio"></audio>  
+      <div class="row">
+        <div class="column">
+          <div class="image-container"  id="imagen">
+            <img src="images/webb/galaxies/14stirone-inyt-videoSixteenByNineJumbo1600-v2.jpg" alt="Image of the JWST" class="image zoom">
+            <audio src="/audios/cancion_saturada.mp3" id="audio"></audio>  
               <div class="overlay-border"></div>
               <div class="overlay-title">
                   <div class="image-title">Título de la Imagen 2</div>
               </div>
+              <button class="mute-button" id="muteButton">Mute</button>
           </div>
       </div>
 
       <div class="column">
-          <div class="image-container">
-              <img src="images/webb/galaxies/14stirone-inyt-videoSixteenByNineJumbo1600-v2.jpg" alt="Image of the JWST" class="image zoom" id="imagen">
-              <audio src="/audios/cancion_saturada.mp3" id="audio"></audio>
-              <div class="overlay-border"></div>
-              <div class="overlay-title">
-                  <div class="image-title">Título de la Imagen 3</div>
-              </div>
+        <div class="image-container" id="imagen">
+          <img src="images/webb/galaxies/14stirone-inyt-videoSixteenByNineJumbo1600-v2.jpg" alt="Image of the JWST" class="image zoom">
+              <audio src="/audios/cancion_saturada.mp3" id="audio"></audio>  
+          <div class="overlay-border"></div>
+          <div class="overlay-title">
+              <div class="image-title">Título de la Imagen 2</div>
           </div>
+          <button class="mute-button" id="muteButton">Mute</button>
+      </div>
+      
       </div>
     </div>
-    
-
   </div>
+
+  
+
     <div class="row">
       <h3>About Us</h3>
       <div class="col"></div>

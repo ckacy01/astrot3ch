@@ -22,7 +22,7 @@
               <a class="nav-link" href="index.html">Home</a>
               <a class="nav-link" href="htdocs/gallery.html">Gallery</a>
               <a class="nav-link" href="htdocs/history.html">History</a>
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="htdocs/games.html"> Games</a>
             </div>
           </div>
         </div>
@@ -34,61 +34,88 @@
               <video src="images/webb/video/James Webb Space Telescope.mp4" autoplay loop muted playsinline class="video" alt="James Webb Space Telescope video"></video>
               <div class="video-overlay"></div>
           </div>
-          <h1 class="title">James Webb Gallery</h1>
+          <div>
+            <h1 class="title">Exploring the Space With Webb</h1> <br>
+            <span class="subtitle">The Symphony of the Stars</span>
+          </div>
         </div>
     </div>
 
     <div class="row text-center mt-5 mb-5">
       <h2>The James Webb Space Telescope</h2>
+      <hr>
       <div class="row">
-        <div class="col-6 mt-2">
-          <p>The James Webb Space Telescope (JWST) is a space observatory designed to study the universe.</p>
+        <div class="col-6 mt-2 mb-2 text-lg-start">
+          <p>The James Webb Space Telescope (JWST) is a space observatory designed to study the universe. Webb studies every phase in the history of our Universe, ranging from the first luminous glows after the Big Bang, to the formation of solar systems capable of supporting life
+            It does not orbit around the Earth like the Hubble Space Telescope, it orbits the Sun 1.5 million kilometers (1 million miles) away from the Earth
+            </p>
       </div>
       <div class="col-6">
-        <img src="images/webb/galaxies/14stirone-inyt-videoSixteenByNineJumbo1600-v2.jpg" alt="Image of the JWST" class="jswtimage">
+        <img src="images/webb/Canada's-stellar-navigator-on-the-James-Webb-Space-Telescope.jpg" alt="Image of the JWST" class="jswtimage">
       </div>
     </div>
     </div>
 
+    
     <div class="row text-center mt-5 mb-5">
       <h3>Gallery Preview</h3>
+      <hr>
       <div class="row">
-        <div class="column">
+        <div class="col-6">
           <div class="image-container"  id="imagen">
-            <img src="images/webb/galaxies/14stirone-inyt-videoSixteenByNineJumbo1600-v2.jpg" alt="Image of the JWST" class="image zoom">
-            <audio src="/audios/cancion_saturada.mp3" id="audio"></audio>  
+            <img src="images/webb/planetas/STScI-01HHFP5G5BXSC5M7DX6DG9YXMB.png" alt="Image of the JWST" class="image zoom thumbnail" data-info="This image of the Neptune system reveals stunning views of the planet’s rings, which have not been seen with this clarity in more than three decades. 
+            Webb also captured “Triton” and 6 more of Neptune’s 14 known moons!">
+            <audio src="audios/fly to the moon.mp3" id="audio"></audio>  
               <div class="overlay-border"></div>
               <div class="overlay-title">
-                  <div class="image-title">Título de la Imagen 2</div>
+                  <div class="image-title">Neptune</div>
               </div>
               <button class="mute-button" id="muteButton">Mute</button>
           </div>
-      </div>
 
-      <div class="column">
-        <div class="image-container">
-          <div class="image-card">
-              <div class="image-front">
-                  <img src="images/webb/galaxies/14stirone-inyt-videoSixteenByNineJumbo1600-v2.jpg" alt="Image of the JWST" class="image zoom" id="imagen">
-                  <audio src="/audios/cancion_saturada.mp3" id="audio"></audio>
-              </div>
-              <div class="image-back">
-                  <p>Información sobre la imagen.</p>
-              </div>
-          </div>
-          <button class="mute-button" id="muteButton">Mute</button>
-      </div>
-          
+    </div>
+          <div class="col-6">
+            <div class="image-container"  id="imagen">
+              <img src="images/webb/Estrellas/Herbig-Haro-46-47-—-NIRCam.jpg" alt="Image of the JWST" class="image zoom thumbnail" data-info="Herbig Haro Tightly bound pair of actively forming stars, known as Herbig-Haro 46/47. It’s only a few thousand years old!
+              Targets like this give researchers insight into how stars gather mass over time!
+              ">
+              <audio src="audios/blinding-lights-lyrics.mp3" id="audio"></audio>  
+                <div class="overlay-border"></div>
+                <div class="overlay-title">
+                    <div class="image-title">Herbig Haro</div>
+                </div>
+                <button class="mute-button" id="muteButton">Mute</button>
+            </div>
+        
       </div>
     </div>
   </div>
 
-  
-
-    <div class="row">
-      <h3>About Us</h3>
-      <div class="col"></div>
+      <div id="popup" class="popup">
+        <span class="close">&times;</span>
+        <img class="popup-content" id="popup-img">
+        <div id="popup-info"></div>
     </div>
-    <script src="js/index.js"></script>
+      
+
+    <div class="row text-center">
+      <h3>About Us</h3>
+      <hr>
+      <div class="col">
+        <p>Astrot3ch is a team of 4 people who are passionate about exploring the universe. We are a team of 4 people who are passionate about exploring the universe. We are from Mazatlan, Mexico.</p>
+      </div>
+    </div>
+   
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 1);">
+        © 2024 Copyright:
+        <a class="text-body" href="">Astrot3ch.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+  <script src="js/index.js"></script>
 </body>
 </html>
